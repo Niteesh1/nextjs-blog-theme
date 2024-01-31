@@ -1,5 +1,5 @@
 ---
-title: Advantages of becoming a AI Engineer in 2024 
+title: Advantages of becoming an AI Engineer in 2024 
 description: "Becoming an AI engineer in 2024 can offer several advantages due to the continued growth and impact of artificial intelligence in various industries. Here are some advantages:"
 date: Jan 31 2024
 ---
@@ -21,23 +21,6 @@ AI engineers often have a wide range of job opportunities in fields such as heal
 ## Impactful Work:
 
 - AI engineers have the opportunity to work on projects that have a significant impact on society, such as healthcare diagnostics, autonomous vehicles, natural language processing, and more. Contributing to projects with real-world implications can be personally fulfilling.
-
-## Horizontal Rules
-
----
-
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-_This is italic text_
-
-_This is italic text_
-
-~~Strikethrough~~
 
 ## Future of AI
 
@@ -68,51 +51,35 @@ _This is italic text_
 
 ## Code
 
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
+Sample code 
 
 ```
-Sample text here...
+Let's create a simple neural network using TensorFlow for image classification:
 ```
 
-Syntax highlighting
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models
 
-```js
-var foo = function (bar) {
-  return bar++;
-};
+# Define the model
+model = models.Sequential([
+    layers.Flatten(input_shape=(28, 28)),  # Input layer
+    layers.Dense(128, activation='relu'),  # Hidden layer
+    layers.Dense(10, activation='softmax') # Output layer
+])
 
-console.log(foo(5));
+# Compile the model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train the model with your dataset
+model.fit(training_images, training_labels, epochs=10)
 ```
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
 
 ## Links
 
-[link text](http://dev.nodeca.com)
+[Follow me on Github](https://github.com/Niteesh1)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[follow me on Instagram](https://www.instagram.com/niteesh_reddy3/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
